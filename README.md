@@ -17,6 +17,16 @@ Early detection of precancerous cysts or neoplasms, i.e., Intraductal Papillary 
 
 <p align = "center"><img src="img/TransIPMN.png" width="600" style = "text-align:center"/></p>
 
+The proposed transformer-based architecture. T1 and T2 slices are concatenated along the channel dimension and sequences of 9 consecutive slices are arranged in a 3×3 grid. Patches are then extracted from the resulting image,and are used as input to the transformer architecture. After encoding the pach set through transformer layers (consisting of a cascade of multihead attention block and MLP layers),a special classification token encodes global image representation, and is used for final classification into three IPMN classes: normal, low risk and high risk.
+
+# Interpretability of results
+
+<p align = "center"><img src="img/comparison.png" width="600" style = "text-align:center"/></p>
+Comparison between the attention maps of some popular CNN-based models and our model in case of correct (top row) and erroneous (bottom row) predictions on a 3×3 grid of MRI images.
+
+<p align = "center"><img src="img/correct.png" width="600" style = "text-align:center"/></p>
+Attention maps of our transformer-based classifier on 3×3 grid of MRI images for correct IPMN classification.
+
 # Code and models
 
 - This code is an adapted version of the original available [here](https://github.com/jeonsworld/ViT-pytorch).
