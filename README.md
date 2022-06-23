@@ -28,7 +28,7 @@ Comparison between the attention maps of some popular CNN-based models and our m
 Attention maps of our transformer-based classifier on 3×3 grid of MRI images for correct IPMN classification.
 <p align = "center"><img src="img/correct.png" width="400" style = "text-align:center"/></p>
 
-# Code and models
+## Notes
 
 - This code is an adapted version of the original available [here](https://github.com/jeonsworld/ViT-pytorch).
 
