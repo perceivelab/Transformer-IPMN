@@ -21,11 +21,12 @@ The proposed transformer-based architecture. T1 and T2 slices are concatenated a
 
 # Interpretability of results
 
-<p align = "center"><img src="img/comparison.png" width="600" style = "text-align:center"/></p>
 Comparison between the attention maps of some popular CNN-based models and our model in case of correct (top row) and erroneous (bottom row) predictions on a 3×3 grid of MRI images.
+<p align = "center"><img src="img/comparison.png" width="700" style = "text-align:center"/></p>
 
-<p align = "center"><img src="img/correct.png" width="600" style = "text-align:center"/></p>
+
 Attention maps of our transformer-based classifier on 3×3 grid of MRI images for correct IPMN classification.
+<p align = "center"><img src="img/correct.png" width="400" style = "text-align:center"/></p>
 
 # Code and models
 
