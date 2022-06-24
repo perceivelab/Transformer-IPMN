@@ -30,7 +30,7 @@ Attention maps of our transformer-based classifier on 3×3 grid of MRI images fo
 
 # How to run 
 
-The code expects a json file containing the image paths and their respective labels, formatted like this:
+The code expects a json file containing the image paths and their respective labels, formatted as follow:
 ```python
 {
  "num_fold": #N, 
@@ -60,7 +60,7 @@ The code expects a json file containing the image paths and their respective lab
 }
 ```
 
-##Pre-requisites:
+## Pre-requisites:
 - NVIDIA GPU (Tested on Nvidia GeForce RTX 3090)
 - [Requirements](requirements.txt)
 
