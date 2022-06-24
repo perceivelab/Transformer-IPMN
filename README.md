@@ -28,6 +28,39 @@ Comparison between the attention maps of some popular CNN-based models and our m
 Attention maps of our transformer-based classifier on 3×3 grid of MRI images for correct IPMN classification.
 <p align = "center"><img src="img/correct.png" width="400" style = "text-align:center"/></p>
 
+# How to run 
+
+The code expects a json file containing the image paths and their respective labels, formatted like this:
+```python
+{"num_fold": #N, 
+ "fold0": { "train": [ {"image_T1": #path, "image_T2": #path, "label": #class}, 
+                       {"image_T1": #path, "image_T2": #path, "label": #class},
+                       ...
+                       {"image_T1": #path, "image_T2": #path, "label": #class}
+                      ],
+            "val": [ {"image_T1": #path, "image_T2": #path, "label": #class},
+                      ...],
+            "test": [{"image_T1": #path, "image_T2": #path, "label": #class},
+                      ...]}, 
+ "fold1": { "train": [],
+            "val": [],
+            "test": []}, 
+ ....
+ "fold#N": { "train": [],
+            "val": [],
+            "test": []},
+}
+```
+
+##Pre-requisites:
+- NVIDIA GPU (Tested on Nvidia GeForce RTX 3090)
+- [Requirements](requirements.txt)
+
+## Train Example
+```bash
+python main.py --name expName --dataset MRI-BALANCED-3Classes --image_modality EarlyFusion --model VisionTransformer --model_type ViT-B_16 --accuracy both --num_fold 0 --output_dir output/ --num_steps 3000
+```
+
 ## Notes
 
 - This code is an adapted version of the original available [here](https://github.com/jeonsworld/ViT-pytorch).
