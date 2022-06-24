@@ -32,15 +32,23 @@ Attention maps of our transformer-based classifier on 3×3 grid of MRI images fo
 
 The code expects a json file containing the image paths and their respective labels, formatted like this:
 ```python
-{"num_fold": #N, 
- "fold0": { "train": [ {"image_T1": #path, "image_T2": #path, "label": #class}, 
-                       {"image_T1": #path, "image_T2": #path, "label": #class},
+{
+ "num_fold": #N, 
+ "fold0": { "train": [ {"image_T1": #path, 
+                        "image_T2": #path, 
+                        "label": #class}, 
                        ...
-                       {"image_T1": #path, "image_T2": #path, "label": #class}
+                       {"image_T1": #path, 
+                        "image_T2": #path, 
+                        "label": #class}
                       ],
-            "val": [ {"image_T1": #path, "image_T2": #path, "label": #class},
+            "val": [ {"image_T1": #path, 
+                      "image_T2": #path, 
+                      "label": #class},
                       ...],
-            "test": [{"image_T1": #path, "image_T2": #path, "label": #class},
+            "test": [{"image_T1": #path, 
+                      "image_T2": #path, 
+                      "label": #class},
                       ...]}, 
  "fold1": { "train": [],
             "val": [],
