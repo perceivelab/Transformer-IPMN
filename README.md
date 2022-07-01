@@ -78,10 +78,11 @@ python main.py --name expName --dataset MRI-BALANCED-3Classes --image_modality E
 # Citation
 
 ```bibtex
-@article{salanitri2022neural,
+@article{proietto2022neural,
   title={Neural Transformers for Intraductal Papillary Mucosal Neoplasms (IPMN) Classification in MRI images},
-  author={Salanitri, Federica Proietto and Bellitto, Giovanni and Palazzo, Simone and Irmakci, Ismail and Wallace, Michael B and Bolan, Candice W and Engels, Megan and Hoogenboom, Sanne and Aldinucci, Marco and Bagci, Ulas and others},
-  journal={arXiv preprint arXiv:2206.10531},
+  author={Proietto Salanitri, Federica and Bellitto, Giovanni and Palazzo, Simone and Irmakci, Ismail and Wallace, Michael B and Bolan, Candice W and Engels, Megan and Hoogenboom, Sanne and Aldinucci, Marco and Bagci, Ulas and others},
+  journal={arXiv e-prints},
+  pages={arXiv--2206},
   year={2022}
 }
 ```
