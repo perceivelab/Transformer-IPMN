@@ -78,14 +78,12 @@ python main.py --name expName --dataset MRI-BALANCED-3Classes --image_modality E
 # Citation
 
 ```bibtex
-@INPROCEEDINGS{9871547,
-  author={Salanitri, F. Proietto and Bellitto, G. and Palazzo, S. and Irmakci, I. and Wallace, M. and Bolan, C. and Engels, M. and Hoogenboom, S. and Aldinucci, M. and Bagci, U. and Giordano, D. and Spampinato, C.},
-  booktitle={2022 44th Annual International Conference of the IEEE Engineering in Medicine & Biology Society (EMBC)}, 
-  title={Neural Transformers for Intraductal Papillary Mucosal Neoplasms (IPMN) Classification in MRI images}, 
+@inproceedings{salanitri2022neural,
+  title={Neural Transformers for Intraductal Papillary Mucosal Neoplasms (IPMN) Classification in MRI images},
+  author={Salanitri, F Proietto and Bellitto, Giovanni and Palazzo, Simone and Irmakci, Ismail and Wallace, M and Bolan, C and Engels, Megan and Hoogenboom, Sanne and Aldinucci, Marco and Bagci, Ulas and others},
+  booktitle={2022 44th Annual International Conference of the IEEE Engineering in Medicine \& Biology Society (EMBC)},
+  pages={475--479},
   year={2022},
-  volume={},
-  number={},
-  pages={475-479},
-  doi={10.1109/EMBC48229.2022.9871547}}
+  organization={IEEE}
 }
 ```
